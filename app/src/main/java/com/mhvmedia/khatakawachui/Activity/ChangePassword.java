@@ -6,20 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.mhvmedia.khatakawachui.R;
-import com.mhvmedia.khatakawachui.databinding.ActivityRegistrationBinding;
-import com.mhvmedia.khatakawachui.databinding.ActivitySliderBinding;
+import com.mhvmedia.khatakawachui.databinding.ActivityAllClientListBinding;
+import com.mhvmedia.khatakawachui.databinding.ActivityChangePasswordBinding;
 
-public class Registration extends AppCompatActivity {
-    private ActivityRegistrationBinding binding;
+public class ChangePassword extends AppCompatActivity {
+    private ActivityChangePasswordBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityRegistrationBinding.inflate(getLayoutInflater());
+        binding = ActivityChangePasswordBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.signin.setOnClickListener(new View.OnClickListener() {
+        binding.changepassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), Login.class);

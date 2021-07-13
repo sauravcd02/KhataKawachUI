@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.Registration">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_arrow"
+                android:rotation="180"
+                app:tint="#222222" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="User Login"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/Text_large"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/logo_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:elevation="@dimen/_1sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.03"
+            android:lineHeight="@dimen/_15sdp"
+            android:text="Copyright Khata Kawach 2021, All right reserved."
+            android:textColor="@color/text3"
+            android:textSize="@dimen/Text_small"  />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_rounded_ractangle_10"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_rounded_ractangle_5"
+                        android:backgroundTint="@color/bg"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/emailphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00ffffff"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Email/Phone"
+                            android:maxLines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/text1"
+                            android:textColorHint="@color/text4"
+                            android:textSize="@dimen/Text_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_rounded_ractangle_5"
+                        android:backgroundTint="@color/bg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ffffff"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/text1"
+                            android:textColorHint="@color/text4"
+                            android:textSize="@dimen/Text_medium" />
+
+                        <ImageView
+                            android:id="@+id/show_pass_btn_p"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:alpha=".5"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_eye" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:id="@+id/signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Sign in"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/Text_large"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/forgetpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Forgot password?"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/Text_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#25000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Don't Have An Account?"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/Text_small" />
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Sign up"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/Text_medium"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

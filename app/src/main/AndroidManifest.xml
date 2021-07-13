@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Registration"></activity>
+        <activity android:name=".Activity.ChangePassword"></activity>
+        <activity android:name=".Activity.ForgetPassword" />
+        <activity android:name=".Activity.AddProduct" />
+        <activity android:name=".Activity.ProductList" />
+        <activity android:name=".Activity.Profile" />
+        <activity android:name=".Activity.ClientProfileAndAccount" />
+        <activity android:name=".Activity.AllClientList" />
+        <activity android:name=".Activity.AddClient" />
+        <activity android:name=".Activity.NewInvoice" />
+        <activity android:name=".Activity.Sales" />
+        <activity android:name=".Activity.FirstScreen" />
+        <activity android:name=".Activity.Login" />
+        <activity android:name=".Activity.Registration" />
         <activity android:name=".Activity.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

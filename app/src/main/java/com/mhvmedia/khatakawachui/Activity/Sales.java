@@ -6,23 +6,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.mhvmedia.khatakawachui.R;
 import com.mhvmedia.khatakawachui.databinding.ActivityRegistrationBinding;
-import com.mhvmedia.khatakawachui.databinding.ActivitySliderBinding;
+import com.mhvmedia.khatakawachui.databinding.ActivitySalesBinding;
 
-public class Registration extends AppCompatActivity {
-    private ActivityRegistrationBinding binding;
+public class Sales extends AppCompatActivity {
+    private ActivitySalesBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityRegistrationBinding.inflate(getLayoutInflater());
+        binding = ActivitySalesBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.signin.setOnClickListener(new View.OnClickListener() {
+        binding.toolbarBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), Login.class);
+                finish();
+            }
+        });
+
+        binding.newinvoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), NewInvoice.class);
                 startActivity(intent);
             }
         });

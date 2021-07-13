@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/bg_rounded_ractangle_10"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/clientname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Saurav Chakraborty"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/clientact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Demo Data"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/clienteamil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="sauravcd02@gmail.com"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/gstin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="236589"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/panno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="854369"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="BD"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Sylhet"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Sylhet"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Dolia, Akhalia, Sylhet Sadar"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

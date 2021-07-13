@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="horizontal"
+    tools:context=".Activity.AddClient">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:rotation="180"
+                android:src="@drawable/ic_arrow"
+                app:tint="#222222" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Add New Client"
+                android:textColor="@color/text1"
+                android:textSize="@dimen/Text_large"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/logo_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/bg_rounded_ractangle_10"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/clientname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Client's name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/clientact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Client Act"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/clienteamil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/gstin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="GSTIN NO"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/panno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="PAN NO"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Country"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="State"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/bg"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#00ffffff"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="City"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/text1"
+                                android:textColorHint="@color/text4"
+                                android:textSize="@dimen/Text_moderate" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addclient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:text="Add Client"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/Text_medium"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
