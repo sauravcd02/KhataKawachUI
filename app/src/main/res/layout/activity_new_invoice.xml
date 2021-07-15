@@ -50,7 +50,7 @@
                 android:layout_height="@dimen/_45sdp"
                 android:layout_gravity="center"
                 android:padding="@dimen/_10sdp"
-                android:src="@drawable/logo_icon" />
+                android:src="@drawable/logo" />
 
         </LinearLayout>
     </LinearLayout>
@@ -68,19 +68,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp"
-                android:background="@drawable/bg_rounded_ractangle_10"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:elevation="@dimen/_1sdp"
+                android:background="@drawable/bg_rounded_ractangle_10_stroke"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
@@ -103,10 +103,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
@@ -129,9 +128,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
@@ -154,7 +152,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -163,8 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="@dimen/_5sdp"
-                        android:background="@drawable/bg_rounded_ractangle_5"
-                        android:backgroundTint="@color/bg"
+                        android:background="@drawable/bg_rounded_ractangle_5_stroke"
                         android:gravity="center"
                         android:padding="@dimen/_5sdp"
                         android:orientation="horizontal">
@@ -199,9 +196,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        android:layout_marginRight="@dimen/_5sdp"
-                        android:background="@drawable/bg_rounded_ractangle_5"
-                        android:backgroundTint="@color/bg"
                         android:gravity="center"
                         android:padding="@dimen/_5sdp"
                         android:orientation="horizontal">
@@ -238,19 +232,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp"
-                android:background="@drawable/bg_rounded_ractangle_10"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:elevation="@dimen/_1sdp"
+                android:background="@drawable/bg_rounded_ractangle_10_stroke"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
@@ -273,7 +267,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -298,8 +292,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_rounded_ractangle_5"
-                            android:backgroundTint="#08000000"
+                            android:background="@drawable/bg_rounded_ractangle_5_stroke"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="@dimen/_5sdp">
@@ -342,8 +335,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_rounded_ractangle_5"
-                            android:backgroundTint="#08000000"
+                            android:background="@drawable/bg_rounded_ractangle_5_stroke"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="@dimen/_5sdp">
@@ -385,8 +377,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_rounded_ractangle_5"
-                            android:backgroundTint="#08000000"
+                            android:background="@drawable/bg_rounded_ractangle_5_stroke"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="@dimen/_5sdp">
@@ -434,8 +425,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:layout_weight="1"
-                            android:background="@drawable/bg_rounded_ractangle_5"
-                            android:backgroundTint="#08000000"
+                            android:background="@drawable/bg_rounded_ractangle_5_stroke"
                             android:gravity="center"
                             android:orientation="horizontal"
                             android:padding="@dimen/_5sdp">
@@ -464,54 +454,52 @@
 
 
                         </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/additem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_rounded_ractangle_5"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="Add Item"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/Text_medium"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/additem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:orientation="vertical"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:paddingLeft="@dimen/_5sdp"
-                    android:paddingTop="@dimen/_5sdp"
-                    android:paddingRight="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_bold"
-                        android:text="Add Item"
-                        android:textColor="#ffffff"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:textSize="@dimen/Text_medium"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:background="@color/black"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#ffffff"
+                android:elevation="@dimen/_1sdp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_5sdp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:orientation="horizontal"
@@ -1004,22 +992,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_rounded_ractangle_5"
-                android:backgroundTint="@color/white"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:orientation="vertical"
-                android:padding="@dimen/_5sdp">
+                android:padding="@dimen/_10sdp"
+                android:elevation="@dimen/_1sdp"
+                android:background="@drawable/bg_rounded_ractangle_10_stroke"
+                android:orientation="vertical">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#00ffffff"
                     android:fontFamily="@font/lato_regular"
                     android:hint="Delivery terms"
                     android:inputType="text"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
                     android:gravity="start"
                     android:maxLines="1"
                     android:padding="@dimen/_5sdp"

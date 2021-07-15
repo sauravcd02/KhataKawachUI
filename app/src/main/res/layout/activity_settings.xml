@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:orientation="horizontal"
-    tools:context=".Activity.Sales">
+    tools:context=".Activity.Settings">
     <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_weight="1"
                 android:fontFamily="@font/lato_bold"
-                android:text="Sales"
+                android:text="Settings"
                 android:textColor="@color/text1"
                 android:textSize="@dimen/Text_large"
                 android:textStyle="bold" />
@@ -71,6 +71,47 @@
             android:elevation="@dimen/_1sdp"
             android:background="@drawable/bg_rounded_ractangle_10_stroke"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_1sdp"
+                android:background="@drawable/bg_rounded_ractangle_10"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_15sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_password"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/lato_regular"
+                    android:textStyle="bold"
+                    android:text="Change Password"
+                    android:textColor="@color/text4"
+                    android:textSize="@dimen/Text_small"  />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:src="@drawable/ic_arrow"
+                    android:tint="@color/text4" />
+
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="0.6"
+                    android:layout_weight="1"
                     android:elevation="@dimen/_1sdp"
                     android:background="@drawable/bg_rounded_ractangle_10"
                     android:backgroundTint="@color/background"
@@ -93,7 +134,7 @@
                     <ImageView
                         android:layout_width="@dimen/_17sdp"
                         android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_leave"
+                        android:src="@drawable/ic_share"
                         android:tint="@color/colorPrimary" />
 
                     <TextView
@@ -104,7 +145,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/lato_regular"
                         android:textStyle="bold"
-                        android:text="New Invoice"
+                        android:text="Share"
                         android:textColor="@color/text4"
                         android:textSize="@dimen/Text_small" />
 
@@ -115,7 +156,77 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_5sdp"
                     android:elevation="@dimen/_1sdp"
-                    android:layout_weight="0.4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_10"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_star"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato_regular"
+                        android:textStyle="bold"
+                        android:text="Rate Us"
+                        android:textColor="@color/text4"
+                        android:textSize="@dimen/Text_small"  />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_10"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_privacy"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato_regular"
+                        android:textStyle="bold"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/text4"
+                        android:textSize="@dimen/Text_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_rounded_ractangle_10"
                     android:backgroundTint="@color/background"
                     android:gravity="center"
@@ -136,77 +247,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/lato_regular"
                         android:textStyle="bold"
-                        android:text="Search &amp; Manage Invoice"
-                        android:textColor="@color/text4"
-                        android:textSize="@dimen/Text_small"  />
-
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:elevation="@dimen/_1sdp"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="0.6"
-                    android:background="@drawable/bg_rounded_ractangle_10"
-                    android:backgroundTint="@color/background"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_15sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_20sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_loan2"
-                        android:tint="@color/colorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:textStyle="bold"
-                        android:text="New Quotation"
-                        android:textColor="@color/text4"
-                        android:textSize="@dimen/Text_small" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/url"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:elevation="@dimen/_1sdp"
-                    android:layout_weight="0.4"
-                    android:background="@drawable/bg_rounded_ractangle_10"
-                    android:backgroundTint="@color/background"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_15sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_17sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_asset"
-                        android:tint="@color/colorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:textStyle="bold"
-                        android:text="Search &amp; Manage Quotation"
+                        android:text="Terms &amp; Condition"
                         android:textColor="@color/text4"
                         android:textSize="@dimen/Text_small" />
 
@@ -220,69 +261,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="0.6"
-                    android:elevation="@dimen/_1sdp"
-                    android:background="@drawable/bg_rounded_ractangle_10"
-                    android:backgroundTint="@color/background"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_15sdp">
 
-                    <ImageView
-                        android:layout_width="@dimen/_17sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_holiday"
-                        android:tint="@color/colorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:textStyle="bold"
-                        android:text="Sales Return"
-                        android:textColor="@color/text4"
-                        android:textSize="@dimen/Text_small"  />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:layout_weight="0.4"
-                    android:elevation="@dimen/_1sdp"
-                    android:background="@drawable/bg_rounded_ractangle_10"
-                    android:backgroundTint="@color/background"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_15sdp">
-
-                    <ImageView
-                        android:layout_width="@dimen/_17sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:src="@drawable/ic_clock"
-                        android:tint="@color/colorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:textStyle="bold"
-                        android:text="Search &amp; Manage Quotation"
-                        android:textColor="@color/text4"
-                        android:textSize="@dimen/Text_small"  />
-
-                </LinearLayout>
 
             </LinearLayout>
 

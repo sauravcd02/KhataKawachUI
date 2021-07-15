@@ -17,10 +17,10 @@
             android:id="@+id/logo"
             android:layout_width="@dimen/_180sdp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="140dp"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
-            android:src="@drawable/logo_full" />
+            android:src="@drawable/logo" />
 
         <com.github.silvestrpredko.dotprogressbar.DotProgressBar
             android:id="@+id/dot_progress_bar"

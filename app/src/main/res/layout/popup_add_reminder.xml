@@ -8,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,22 +27,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/lato_bold"
-                    android:text="Reminders"
                     android:layout_weight="1"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Add Reminders"
                     android:textColor="@color/text1"
                     android:textSize="@dimen/Text_large"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/lato_bold"
-                    android:text="X"
-                    android:gravity="center"
                     android:layout_marginBottom="@dimen/_2sdp"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
                     android:padding="@dimen/_5sdp"
+                    android:text="X"
                     android:textColor="@color/red"
                     android:textSize="@dimen/Text_large"
                     android:textStyle="bold" />
@@ -55,180 +57,58 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:calendarViewShown="true"/>
+                android:calendarViewShown="true" />
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_5sdp"
-                android:background="@drawable/bg_rounded_ractangle_10"
-                android:backgroundTint="@color/white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_rounded_ractangle_10_stroke"
+                android:elevation="@dimen/_1sdp"
                 android:orientation="vertical"
-                android:padding="@dimen/_5sdp">
+                android:padding="@dimen/_10sdp">
 
-                <LinearLayout
-                    android:id="@+id/client1"
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:text="Canadian government scholarships and fellowships offered to international students"
-                        android:textColor="@color/text4"
-                        android:maxLines="2"
-                        android:textSize="@dimen/Text_small" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:src="@drawable/ic_arrow"
-                        android:tint="@color/text4" />
-
-
-                </LinearLayout>
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="start"
+                    android:hint="Note"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minHeight="@dimen/_65sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/text1"
+                    android:textColorHint="@color/text4"
+                    android:textSize="@dimen/Text_moderate" />
 
                 <LinearLayout
+                    android:id="@+id/additem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:text="Canadian government scholarships and fellowships offered to international students"
-                        android:textColor="@color/text4"
-                        android:maxLines="2"
-                        android:textSize="@dimen/Text_small" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:src="@drawable/ic_arrow"
-                        android:tint="@color/text4" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:text="Canadian government scholarships and fellowships offered to international students"
-                        android:textColor="@color/text4"
-                        android:maxLines="2"
-                        android:textSize="@dimen/Text_small" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:src="@drawable/ic_arrow"
-                        android:tint="@color/text4" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:text="Canadian government scholarships and fellowships offered to international students"
-                        android:textColor="@color/text4"
-                        android:maxLines="2"
-                        android:textSize="@dimen/Text_small" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:src="@drawable/ic_arrow"
-                        android:tint="@color/text4" />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@drawable/bg_rounded_ractangle_5"
-                    android:backgroundTint="@color/bg"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/lato_regular"
-                        android:text="Canadian government scholarships and fellowships offered to international students"
-                        android:textColor="@color/text4"
-                        android:maxLines="2"
-                        android:textSize="@dimen/Text_small" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:src="@drawable/ic_arrow"
-                        android:tint="@color/text4" />
-
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:text="Add"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/Text_medium"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 

@@ -1,31 +1,22 @@
 package com.mhvmedia.khatakawachui.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.mhvmedia.khatakawachui.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.mhvmedia.khatakawachui.databinding.ActivityFirstScreenBinding;
-import com.mhvmedia.khatakawachui.databinding.ActivityLoginBinding;
 import com.mhvmedia.khatakawachui.databinding.PopupAddReminderBinding;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class FirstScreen extends AppCompatActivity {
     private ActivityFirstScreenBinding binding;
     private PopupAddReminderBinding popupAddReminderBinding;
     private Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +79,64 @@ public class FirstScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        binding.stuff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), AddStuff.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), Settings.class);
+                startActivity(intent);
+            }
+        });
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+        binding.menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (binding.drawerLayout.getVisibility() == View.GONE) {
+                    binding.drawerLayout.setVisibility(View.VISIBLE);
+                 /*  Animation animation   =    AnimationUtils.loadAnimation(getApplicationContext(), R.anim.layout_animation);
+                    animation.setDuration(750);
+                    binding.drawerLayout.setAnimation(animation);
+                    binding.drawerLayout.animate();
+                    animation.start();
+                    animation.cancel();*/
+                } else {
+                    /*binding.drawerLayout.setVisibility(View.GONE);
+                    Animation animation   =    AnimationUtils.loadAnimation(getApplicationContext(), R.anim.layout_animation_2);
+                    animation.setDuration(750);
+                    binding.drawerLayout.setAnimation(animation);
+                    binding.drawerLayout.animate();
+                    animation.start();
+                    animation.cancel();*/
+
+                    binding.drawerLayout.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        binding.close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.drawerLayout.setVisibility(View.GONE);
+               /* Animation animation   =    AnimationUtils.loadAnimation(getApplicationContext(), R.anim.layout_animation_2);
+                animation.setDuration(750);
+                binding.drawerLayout.setAnimation(animation);
+                binding.drawerLayout.animate();
+                animation.start();
+                binding.drawerLayout.setVisibility(View.GONE);
+                animation.cancel();*/
+            }
+        });
+        ////////////////////////////////////////////////////////////////////////////////////////////
 
     }
 

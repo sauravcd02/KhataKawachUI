@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#333333</color>
     <color name="colorAccent">#018F83</color>
 
-    <color name="bg">#FAFAFA</color>
-    <color name="background">#FAFAFA</color>
+    <color name="bg">#EDF7F6</color>
+    <color name="background">#EDF7F6</color>
 
     <color name="text1">#111111</color>
     <color name="text2">#222222</color>
@@ -21,7 +21,7 @@
     <color name="dot_dark_screen2">#E4E4E4</color>
 
     <color name="red">#cc1d1d</color>
-    <color name="green">#1dcc51</color>
+    <color name="green">#06BA3B</color>
 
     <!-- dots active colors -->
     <color name="dot_light_screen1">#222222</color>

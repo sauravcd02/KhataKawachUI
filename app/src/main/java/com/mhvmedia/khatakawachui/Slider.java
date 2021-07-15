@@ -26,7 +26,6 @@ public class Slider extends AppCompatActivity {
     private LinearLayout dotsLayout, indicator;
     private int[] layouts;
     private TextView btnSkip, text_indicator;
-    private ImageView btnNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,6 @@ public class Slider extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         btnSkip = (TextView) findViewById(R.id.btn_skip);
-        btnNext = (ImageView) findViewById(R.id.btn_next);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
         text_indicator = (TextView) findViewById(R.id.text_indicator);
         indicator = (LinearLayout) findViewById(R.id.indicator);
@@ -73,13 +71,7 @@ public class Slider extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // checking for last page if true launch MainActivity
-                int current = getItem(+1);
-                if (current < layouts.length) {
-                    // move to next screen
-                    viewPager.setCurrentItem(current);
-                } else {
-                    launchHomeScreen();
-                }
+                launchHomeScreen();
             }
         });
     }
@@ -121,14 +113,10 @@ public class Slider extends AppCompatActivity {
             // changing the next button text 'NEXT' / 'GOT IT'
             if (position == layouts.length - 1) {
                 // last page. make button text to GOT IT
-                text_indicator.setText("START");
-                btnNext.setImageResource(R.drawable.ic_tick);
-                btnSkip.setVisibility(View.GONE);
+
             } else {
                 // still pages are left
-                text_indicator.setText("NEXT");
-                btnNext.setImageResource(R.drawable.ic_arrow);
-                btnSkip.setVisibility(View.VISIBLE);
+
             }
         }
 
