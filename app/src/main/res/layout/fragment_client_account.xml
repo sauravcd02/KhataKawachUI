@@ -140,7 +140,7 @@
                             android:layout_weight="1"
                             android:fontFamily="@font/lato_regular"
                             android:maxLines="1"
-                            android:hint="Select Bank"
+                            android:hint="Edit"
                             android:textColorHint="@color/text4"
                             android:textColor="@color/text1"
                             android:textSize="@dimen/Text_moderate"/>

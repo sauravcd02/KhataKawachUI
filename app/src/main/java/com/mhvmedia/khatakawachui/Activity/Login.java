@@ -1,9 +1,12 @@
 package com.mhvmedia.khatakawachui.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 
 import com.mhvmedia.khatakawachui.R;
@@ -36,7 +39,7 @@ public class Login extends AppCompatActivity {
         binding.signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), FirstScreen.class);
+                Intent intent = new Intent(getBaseContext(), AppLock.class);
                 startActivity(intent);
             }
         });
@@ -46,6 +49,21 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), ForgetPassword.class);
                 startActivity(intent);
+            }
+        });
+
+        binding.showPassBtnP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (binding.password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())) {
+                    //Show Password
+                    binding.password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    binding.showPassBtnP.setColorFilter(ContextCompat.getColor(Login.this, R.color.colorPrimary));
+                } else {
+                    //Hide Password
+                    binding.password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    binding.showPassBtnP.setColorFilter(null);
+                }
             }
         });
 

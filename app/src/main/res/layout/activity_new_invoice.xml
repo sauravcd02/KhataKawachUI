@@ -80,11 +80,45 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_weight="1"
+                            android:text="Cash"
+                            android:textSize="@dimen/Text_moderate"
+                            android:fontFamily="@font/lato_regular"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_weight="1"
+                            android:text="Client"
+                            android:textSize="@dimen/Text_moderate"
+                            android:fontFamily="@font/lato_regular"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/bg_rounded_ractangle_5_stroke"
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/clientname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -167,6 +201,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/datetime"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -191,40 +226,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:padding="@dimen/_5sdp"
-                        android:orientation="horizontal">
-
-                        <RadioGroup
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <RadioButton
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_weight="1"
-                                android:text="Cash"
-                                android:textSize="@dimen/Text_moderate"
-                                android:gravity="center"
-                                android:fontFamily="@font/lato_regular"/>
-                            <RadioButton
-                                android:layout_width="match_parent"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_weight="1"
-                                android:text="Client"
-                                android:textSize="@dimen/Text_moderate"
-                                android:gravity="center"
-                                android:fontFamily="@font/lato_regular"/>
-                        </RadioGroup>
-
-
-                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -248,7 +249,7 @@
                     android:orientation="vertical"
                     android:padding="@dimen/_5sdp">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/first_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -272,7 +273,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -287,28 +288,32 @@
                             android:textColor="@color/text3"
                             android:textSize="@dimen/Text_very_small" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_2sdp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_rounded_ractangle_5_stroke"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            android:padding="@dimen/_5sdp">
-
-                            <EditText
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="#00ffffff"
-                                android:fontFamily="@font/lato_regular"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@color/text1"
-                                android:textColorHint="@color/text1"
-                                android:textSize="@dimen/Text_moderate" />
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                                android:orientation="horizontal">
 
-                        </LinearLayout>
+                                <Spinner
+                                    android:id="@+id/unitspinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00ffffff" />
+                                <ImageView
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_1sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:tint="@color/text4" />
+
+
+                            </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -995,10 +1000,9 @@
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_10sdp"
                 android:padding="@dimen/_10sdp"
                 android:elevation="@dimen/_1sdp"
-                android:background="@drawable/bg_rounded_ractangle_10_stroke"
+                android:background="@drawable/bg_rounded_ractangle_10"
                 android:orientation="vertical">
 
                 <EditText
@@ -1018,6 +1022,28 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/createinvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_ractangle_5"
+                android:backgroundTint="@color/colorPrimary"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Create Invoice"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/Text_medium"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

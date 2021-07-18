@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sales"
+            android:icon="@drawable/ic_sales"
+            android:title="Sales" />
+    </group>
+
+    <group
+        android:id="@+id/two"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/account"
+            android:icon="@drawable/ic_accounts"
+            android:title="Account" />
+    </group>
+
+    <group
+        android:id="@+id/three"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/client"
+            android:icon="@drawable/ic_clients"
+            android:title="Clients" />
+    </group>
+    <group
+        android:id="@+id/four"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/analytics"
+            android:icon="@drawable/analytics"
+            android:title="Analytics" />
+    </group>
+    <group
+        android:id="@+id/five"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/product"
+            android:icon="@drawable/ic_products"
+            android:title="Product" />
+    </group>
+    <group
+        android:id="@+id/six"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+    </group>
+    <group
+        android:id="@+id/seven"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/stuff"
+            android:icon="@drawable/ic_stuff"
+            android:title="Stuff" />
+    </group>
+    <group
+        android:id="@+id/eight"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+</menu>

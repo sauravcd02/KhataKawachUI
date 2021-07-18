@@ -13,4 +13,13 @@
         <item name="fontFamily">@font/lato_bold</item>
     </style>
 
+    <style name="NavigationDrawerViewTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/Text_moderate</item>
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">@dimen/_25sdp</item><!-- menu item height- vary as u need -->
+    </style>
 </resources>

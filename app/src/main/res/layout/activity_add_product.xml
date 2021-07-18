@@ -169,33 +169,35 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <LinearLayout
                              android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="@dimen/_5sdp"
                             android:layout_weight="1"
                             android:background="@drawable/bg_rounded_ractangle_5_stroke"
-                            android:orientation="vertical"
+                            android:orientation="horizontal"
                             android:padding="@dimen/_5sdp">
 
-                            <EditText
-                                android:id="@+id/unit"
+                            <Spinner
+                                android:id="@+id/unitspinner"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="#00ffffff"
-                                android:fontFamily="@font/lato_regular"
-                                android:hint="Unit"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:padding="@dimen/_5sdp"
-                                android:textColor="@color/text1"
-                                android:textColorHint="@color/text4"
-                                android:textSize="@dimen/Text_moderate" />
+                                android:layout_height="match_parent"
+                                android:background="#00ffffff" />
+                            <ImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_down_arrow"
+                                android:tint="@color/text4" />
+
 
                         </LinearLayout>
                     </LinearLayout>
@@ -335,30 +337,6 @@
 
                         </LinearLayout>
                     </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout
-                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_5sdp">
-
-                    <EditText
-                        android:id="@+id/address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#00ffffff"
-                        android:fontFamily="@font/lato_regular"
-                        android:hint="Address"
-                        android:inputType="text"
-                        android:maxLines="1"
-                        android:padding="@dimen/_5sdp"
-                        android:textColor="@color/text1"
-                        android:textColorHint="@color/text4"
-                        android:textSize="@dimen/Text_moderate" />
 
                 </LinearLayout>
                 <LinearLayout
