@@ -312,7 +312,6 @@
                                     android:src="@drawable/ic_down_arrow"
                                     android:tint="@color/text4" />
 
-
                             </LinearLayout>
                     </LinearLayout>
 
@@ -489,9 +488,7 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"

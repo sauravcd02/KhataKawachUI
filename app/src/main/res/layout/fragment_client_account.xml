@@ -113,17 +113,18 @@
                     android:layout_weight=".6">
 
                     <TextView
+                        android:id="@+id/bank_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:fontFamily="@font/lato_regular"
                         android:maxLines="1"
-                        android:text="Union Bank of India"
+                        android:text=""
                         android:textColor="@color/text5"
                         android:textSize="@dimen/Text_small"/>
 
                     <LinearLayout
-                        android:id="@+id/date"
+                        android:id="@+id/addeditbank"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2sdp"
@@ -133,6 +134,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/bankinfostatus"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -140,7 +142,7 @@
                             android:layout_weight="1"
                             android:fontFamily="@font/lato_regular"
                             android:maxLines="1"
-                            android:hint="Edit"
+                            android:hint="Add Bank"
                             android:textColorHint="@color/text4"
                             android:textColor="@color/text1"
                             android:textSize="@dimen/Text_moderate"/>

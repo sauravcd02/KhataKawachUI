@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded_ractangle_10"
+    android:backgroundTint="@color/bg"
+    android:padding="@dimen/_5sdp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Bank Account Information"
+                    android:textColor="@color/text1"
+                    android:textSize="@dimen/Text_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="X"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/Text_large"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_rounded_ractangle_10_stroke"
+                android:elevation="@dimen/_1sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Bank name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/accountname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Account name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/accountnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Account number"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_ractangle_5_stroke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/ifsc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="IFSC"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text1"
+                        android:textColorHint="@color/text4"
+                        android:textSize="@dimen/Text_moderate" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/additem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_rounded_ractangle_5"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:text="Add"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/Text_medium"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -49,7 +49,7 @@ public class FirstScreen extends AppCompatActivity implements NavigationView.OnN
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.first_screen, R.id.sales, R.id.account, R.id.client, R.id.analytics, R.id.product, R.id.profile, R.id.stuff, R.id.settings)
+                 R.id.sales, R.id.account, R.id.client, R.id.analytics, R.id.product, R.id.profile, R.id.stuff, R.id.settings)
                 .setDrawerLayout(drawer)
                 .build();
 
